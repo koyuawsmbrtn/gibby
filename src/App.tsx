@@ -4,21 +4,50 @@ import $ from 'jquery';
 import twemoji from 'twemoji';
 import { Button, FormControl } from 'react-bootstrap';
 
+var charlimit = 500;
+
+function entrypress() {
+  var currentchars = $("#entry-text").val().length;
+  var charsleft = charlimit - currentchars;
+  if (charsleft < 0) {
+    $("#charlimit").css("color", "red");
+  } else {
+    $("#charlimit").css("color", "#333")
+  }
+  $("#charlimit").html(charsleft);
+}
+
 export default class App extends React.Component {
   componentDidMount() {
     const exec = require('child_process').exec;
 
     function execute(command, callback) {
-        exec(command, (error, stdout, stderr) => { 
-            callback(stdout); 
+        exec(command, (error, stdout, stderr) => {
+            callback(stdout);
         });
-    };
-    
+    }
+
+    function initialize() {
+      try {
+        $("#instance-logo").attr("src", "https://"+localStorage.getItem("instance")+"/apple-touch-icon.png");
+        $.get("https://"+localStorage.getItem("instance")+"/api/v1/instance", (data) => {
+          console.log(data);
+          try {
+            charlimit = data["max_toot_chars"];
+            $("#charlimit").html(charlimit);
+          } catch (e) {}
+        });
+      } catch(e) {}
+    }
+
     // call the function
-/*     execute('notify-send "Test notification"', ()=>{});    
+/*     execute('notify-send "Test notification"', ()=>{});
     if (window.location.href.includes("#")) {
       $("#front").hide();
     } */
+
+    localStorage.setItem("instance", "koyu.space");
+    initialize();
     $("#front").html(twemoji.parse($("#front").html()));
     $("#instance").on("keypress", (e) => {
       if (e.key === "Enter") {
@@ -51,7 +80,14 @@ export default class App extends React.Component {
           </div>
         </div>
         <div id="back">
-          <h1>Default UI</h1>
+          <img className="avatar" id="instance-logo" />
+          <div id="entry">
+            <img src="file:///home/koyu/Dropbox/private/rlbunnylook_banner-ppic.png" className="avatar" />
+            <textarea placeholder="What are you doing?" onKeyUp={entrypress} rows="3" cols="53" id="entry-text"></textarea><br />
+            <div id="post-button">
+              <span id="charlimit">500</span> <Button variant="primary" id="post-submit">Post!</Button>
+            </div>
+          </div>
         </div>
       </div>
     );
