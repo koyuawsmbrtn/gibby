@@ -1,0 +1,12 @@
+{
+  "name": "gibby",
+  "productName": "gibby",
+  "version": "1.0.0",
+  "main": "./main.prod.js",
+  "scripts": {
+    "electron-rebuild": "node -r ../.gibby/scripts/BabelRegister.js ../.gibby/scripts/ElectronRebuild.js",
+    "postinstall": "yarn electron-rebuild"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}
