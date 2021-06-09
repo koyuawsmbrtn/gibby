@@ -45,13 +45,25 @@ export default class App extends React.Component {
     if (window.location.href.includes("#")) {
       $("#front").hide();
     } */
+    try {
+      if (localStorage.getItem("instance") !== null) {
+        $("#front").hide();
+        window.location.href = window.location.href+"#back";
+      }
+    } catch (e) {}
 
-    localStorage.setItem("instance", "koyu.space");
+    $("#logout-button").click(() => {
+      localStorage.clear();
+      window.location.href = window.location.href.split("#")[0];
+    });
+
     initialize();
     $("#front").html(twemoji.parse($("#front").html()));
     $("#instance").on("keypress", (e) => {
       if (e.key === "Enter") {
+        localStorage.setItem("instance", $("#instance-text").val());
         window.location.href = window.location.href+"#back";
+        initialize();
         e.preventDefault();
       }
     });
@@ -80,7 +92,8 @@ export default class App extends React.Component {
           </div>
         </div>
         <div id="back">
-          <img className="avatar" id="instance-logo" />
+          <i class="fa fa-sign-out" id="logout-button" aria-hidden="true"></i>
+          <img id="instance-logo" draggable="false" />
           <div id="entry">
             <img src="file:///home/koyu/Dropbox/private/rlbunnylook_banner-ppic.png" className="avatar" />
             <textarea placeholder="What are you doing?" onKeyUp={entrypress} rows="3" cols="53" id="entry-text"></textarea><br />

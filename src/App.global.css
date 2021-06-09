@@ -103,8 +103,19 @@ input {
   margin: 20px;
   position: absolute;
   top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
 }
 
 #charlimit {
   margin-right: 5px;
+}
+
+#logout-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 48px;
+  cursor: pointer;
 }
