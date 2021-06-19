@@ -41,7 +41,7 @@ export default class App extends React.Component {
             var token = localStorage.getItem("token");
             console.log(token);
             $.ajax({
-              url: "https://"+backend+"/api/v1/apps/verify_credentials",
+              url: "https://"+backend+"/api/v1/accounts/verify_credentials",
               type: "GET",
               dataType: "JSON",
               beforeSend: (xhr) => {
@@ -52,7 +52,7 @@ export default class App extends React.Component {
                 $("#user-picture").attr("src", callback["avatar"]);
               },
               error: () => {
-                //logout();
+                logout();
               },
             });
           } catch (e) {}
@@ -93,7 +93,7 @@ export default class App extends React.Component {
       localStorage.setItem("instance", backend);
       $.ajax({
         url: "https://"+backend+"/oauth/token",
-        type: "GET",
+        type: "POST",
         dataType: "JSON",
 /*         beforeSend: (xhr) => {
           xhr.setRequestHeader("Authorization", "Bearer "+token);
@@ -187,7 +187,7 @@ export default class App extends React.Component {
           <i class="fa fa-sign-out" id="logout-button" aria-hidden="true"></i>
           <img id="instance-logo" draggable="false" />
           <div id="entry">
-            <img src="file:///home/koyu/Dropbox/private/rlbunnylook_banner-ppic.png" id="user-picture" className="avatar" />
+            <img id="user-picture" className="avatar" />
             <textarea placeholder="What are you doing?" onKeyUp={entrypress} rows="3" cols="53" id="entry-text"></textarea><br />
             <div id="post-button">
               <span id="charlimit">500</span> <Button variant="primary" id="post-submit">Post!</Button>

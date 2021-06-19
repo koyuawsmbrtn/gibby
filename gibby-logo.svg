@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="128"
+   height="128"
+   viewBox="0 0 33.866666 33.866666"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="gibby-logo.svg"
+   inkscape:export-filename="/home/koyu/gibby/gibby-logo.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="6.3671875"
+     inkscape:cx="26.620859"
+     inkscape:cy="64"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1680"
+     inkscape:window-height="996"
+     inkscape:window-x="0"
+     inkscape:window-y="28"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-263.13334)">
+    <g
+       id="g863"
+       transform="translate(8.9009602e-7,-7.5748698e-6)">
+      <circle
+         r="12.175378"
+         cy="280.06668"
+         cx="16.933332"
+         id="path835"
+         style="fill:none;fill-opacity:1;stroke:#8cdf5c;stroke-width:1.55799997;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         r="8.963974"
+         cy="280.06668"
+         cx="16.933332"
+         id="path835-3"
+         style="fill:none;fill-opacity:1;stroke:#8cdf5c;stroke-width:1.55799997;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <g
+         transform="translate(-0.52916633,0.36918833)"
+         id="text854"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#8cdf5c;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         aria-label="G">
+        <path
+           inkscape:connector-curvature="0"
+           id="path856"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:ColorTube;-inkscape-font-specification:ColorTube;fill:#8cdf5c;fill-opacity:1;stroke-width:0.26458332"
+           d="m 22.140333,283.23759 q 0,0.22225 -0.09525,0.43391 -0.08467,0.1905 -0.243417,0.33867 v 0 0 0.0106 0 q -0.846667,0.79375 -1.905,1.19592 -1.058333,0.40217 -2.180166,0.40217 -1.153584,0 -2.233084,-0.41275 -1.0795,-0.42334 -1.947333,-1.23825 -0.85725,-0.81492 -1.344083,-1.9685 -0.465667,-1.0795 -0.465667,-2.29659 0,-1.72508 0.836083,-3.07975 0.846667,-1.35466 2.2225,-2.0955 1.375834,-0.75141 2.910417,-0.75141 1.100667,0 2.148417,0.41275 1.047749,0.40216 1.904999,1.23825 0.328084,0.32808 0.328084,0.77258 0,0.4445 -0.3175,0.762 -0.306917,0.3175 -0.751417,0.3175 -0.423333,0 -0.751416,-0.30692 v 0.0106 q -0.550334,-0.52917 -1.217084,-0.79375 -0.66675,-0.26459 -1.36525,-0.26459 -0.98425,0 -1.862666,0.48684 -0.878417,0.47625 -1.418167,1.34408 -0.529167,0.85725 -0.529167,1.94733 0,1.09009 0.529167,1.95792 0.53975,0.85725 1.418167,1.34408 0.889,0.47625 1.883833,0.47625 1.248833,0 2.296583,-0.75141 v -1.86267 h -2.741083 q -0.4445,0 -0.762,-0.30692 -0.3175,-0.3175 -0.3175,-0.762 0,-0.4445 0.3175,-0.762 0.3175,-0.3175 0.762,-0.3175 h 3.820583 q 0.4445,0 0.751417,0.3175 0.3175,0.3175 0.3175,0.762 z" />
+      </g>
+    </g>
+  </g>
+</svg>
